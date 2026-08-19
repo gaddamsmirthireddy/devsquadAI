@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: ${DEVSQUAD_DB_URL:jdbc:postgresql://localhost:5432/devsquad}
+    driver-class-name: org.postgresql.Driver
+    username: ${DEVSQUAD_DB_USERNAME:devsquad}
+    password: ${DEVSQUAD_DB_PASSWORD:devsquad}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  flyway:
+    enabled: true
+
+server:
+  port: 8080

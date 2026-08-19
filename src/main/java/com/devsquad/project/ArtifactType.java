@@ -1,0 +1,8 @@
+package com.devsquad.project;
+
+public enum ArtifactType {
+    REQUIREMENTS_SPECIFICATION,
+    ARCHITECTURE_SPECIFICATION,
+    DATABASE_SPECIFICATION,
+    API_SPECIFICATION
+}
