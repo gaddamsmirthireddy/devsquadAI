@@ -30,7 +30,7 @@ public class ProjectEvent {
     @Column(name = "event_type", nullable = false, length = 64)
     private ProjectEventType eventType;
 
-    @Column(name = "payload_json", length = 10000)
+    @Column(name = "payload_json", columnDefinition = "TEXT")
     private String payloadJson;
 
     @Column(name = "source_task_id")

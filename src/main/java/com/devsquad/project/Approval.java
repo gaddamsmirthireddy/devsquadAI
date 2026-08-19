@@ -34,10 +34,10 @@ public class Approval {
     @Column(nullable = false, length = 32)
     private ApprovalStatus status;
 
-    @Column(name = "reason", length = 10000)
+    @Column(name = "reason", columnDefinition = "TEXT")
     private String reason;
 
-    @Column(name = "decision_comment", length = 10000)
+    @Column(name = "decision_comment", columnDefinition = "TEXT")
     private String decisionComment;
 
     @Column(name = "decided_at")

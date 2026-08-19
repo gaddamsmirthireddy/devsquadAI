@@ -26,10 +26,10 @@ public class ProjectRequirement {
     @JoinColumn(name = "project_id", nullable = false, unique = true)
     private Project project;
 
-    @Column(name = "raw_requirement", nullable = false, length = 4000)
+    @Column(name = "raw_requirement", columnDefinition = "TEXT")
     private String rawRequirement;
 
-    @Column(name = "requirements_json", length = 10000)
+    @Column(name = "requirements_json", columnDefinition = "TEXT")
     private String requirementsJson;
 
     @CreationTimestamp

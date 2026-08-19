@@ -37,7 +37,7 @@ public class Artifact {
     @Column(name = "prompt_version", nullable = false, length = 64)
     private String promptVersion;
 
-    @Column(nullable = false, length = 10000)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String content;
 
     @CreationTimestamp

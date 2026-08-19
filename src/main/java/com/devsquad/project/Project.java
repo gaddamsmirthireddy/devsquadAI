@@ -21,7 +21,7 @@ public class Project {
     @Column(nullable = false, updatable = false)
     private UUID id;
 
-    @Column(name = "original_requirement", nullable = false, length = 4000)
+    @Column(name = "original_requirement", columnDefinition = "TEXT")
     private String originalRequirement;
 
     @Enumerated(EnumType.STRING)

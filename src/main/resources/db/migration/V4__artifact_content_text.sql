@@ -1,0 +1,2 @@
+ALTER TABLE artifacts
+ALTER COLUMN content TYPE TEXT;

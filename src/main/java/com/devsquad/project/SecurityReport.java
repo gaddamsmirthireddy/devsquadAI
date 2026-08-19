@@ -39,7 +39,7 @@ public class SecurityReport {
     @Column(nullable = false)
     private boolean passed;
 
-    @Column(length = 10000)
+    @Column(name = "summary", columnDefinition = "TEXT")
     private String summary;
 
     @CreationTimestamp
